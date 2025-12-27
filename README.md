@@ -1,12 +1,12 @@
-🧠 Introvert vs Extrovert Personality Prediction
-📌 Project Overview
+# 🧠 Introvert vs Extrovert Personality Prediction
+## 📌 Project Overview
 
 This project focuses on predicting a person’s personality type (Introvert or Extrovert) using behavioral and social features.
 The goal is to build a robust supervised classification system by applying proper data analysis, preprocessing, and multiple machine learning models.
 
 Rather than treating ML as a black box, this project emphasizes data understanding, feature behavior, and model comparison.
 
-📊 Dataset Description
+# 📊 Dataset Description
 
 Rows: 2900 → cleaned to 2498 after removing duplicates
 
@@ -18,8 +18,8 @@ Target Variable: Personality
 
 1 → Extrovert
 
-Features Used
-Feature	Description
+# Features Used
+# Feature	Description
 Time_spent_Alone	Time spent alone
 Social_event_attendance	Frequency of attending social events
 Going_outside	How often the person goes outside
@@ -27,7 +27,8 @@ Friends_circle_size	Number of friends
 Post_frequency	Social media post frequency
 Stage_fear	Stage fear (Yes/No)
 Drained_after_socializing	Feels drained after socializing (Yes/No)
-🔍 Exploratory Data Analysis (EDA)
+
+# 🔍 Exploratory Data Analysis (EDA)
 
 Dataset overview using a custom smart overview function
 
@@ -43,7 +44,7 @@ Boxplots & violin plots for personality comparison
 
 Outlier detection using IQR method (no significant outliers found)
 
-🧹 Data Preprocessing
+# 🧹 Data Preprocessing
 
 Removed duplicate records
 
@@ -55,7 +56,7 @@ Feature–target separation
 
 Train–test split (80/20)
 
-🤖 Models Trained
+# 🤖 Models Trained
 
 Multiple classification models were trained and compared:
 
@@ -75,7 +76,7 @@ Gradient Boosting
 
 XGBoost
 
-📈 Model Performance
+# 📈 Model Performance
 
 Most models achieved ~90–91% accuracy, showing strong and consistent performance.
 
@@ -91,19 +92,19 @@ XGBoost	~87.8%
 
 Random Forest was selected as the final model due to stability and strong generalization.
 
-❌ Error Analysis
+# ❌ Error Analysis
 
 Total incorrect predictions: 61
 
 Misclassified samples were extracted and analyzed to understand model confusion patterns.
 
-💾 Model Saving
+# 💾 Model Saving
 
 The final trained model was saved using joblib for future inference or deployment.
 
 joblib.dump(final_model, 'personality_model.pkl')
 
-🛠️ Tech Stack & Libraries
+# 🛠️ Tech Stack & Libraries
 
 Python
 
@@ -119,7 +120,7 @@ CatBoost
 
 joblib
 
-🎯 Key Learnings
+# 🎯 Key Learnings
 
 Importance of EDA before modeling
 
@@ -131,7 +132,7 @@ Understanding that higher complexity doesn’t always mean better performance
 
 Model evaluation beyond just accuracy
 
-🚀 Future Improvements
+# 🚀 Future Improvements
 
 Hyperparameter tuning using GridSearchCV / RandomizedSearchCV
 
